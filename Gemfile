@@ -30,6 +30,8 @@ gem 'better_errors', '~> 2.10', '>= 2.10.1'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'faker'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
