@@ -5,6 +5,7 @@ export const fetchGreeting = createAsyncThunk(
   'greeting/fetchGreeting',
   async () => {
     const response = await axios.get('/greetings/api-random');
+    console.log(response.data.greeting);
     return response.data.greeting;
   }
 );
@@ -39,4 +40,4 @@ const greetingSlice = createSlice({
 
 export const randomGreeting = (state) => state.greeting.greeting;
 
-export const { setGreeting } = greetingSlice.actions;
+export default greetingSlice.reducer;
